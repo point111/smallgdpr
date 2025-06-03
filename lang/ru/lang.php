@@ -33,6 +33,8 @@ return [
             'content' => 'Содержание',
             'slug' => 'Код',
             'url' => 'URL',
+			'url_description' => 'Установите # если хотите остаться на текущей странице после нажатия на кнопку или введите адрес если перенаправляете посетителя на другую страницу.',
+												   
             'url_external' => 'Внешний URL',
             'url_external_description' => 'URL ведет на страницу за пределами этого веб-сайта (eg. https://www.google.com).',
             'description' => 'Описание',
@@ -54,14 +56,19 @@ return [
             'add_css_description' => 'Вставляет стандартные CSS стили',
             'accept_all_cookies_btn' => 'Разрешить все cookies',
             'accept_all_cookies_btn_description' => 'Если вы нажмете на эту кнопку, все cookie будут автоматически приняты, и элемент исчезнет.',
-            'import' => 'Настройки импорта',
+			'accept_all_cookies_btn_script' => 'Скрипт, который будет запущен после нажатия этой кнопки (не используйте тег <script>)',
+            'accept_all_cookies_btn_script_description' => 'Вы можете добавить свой собственный скрипт JavaScript, который будет запускаться после нажатия кнопки.',
+            'disable_all_cookies_btn' => 'Отключить все cookies',
+            'disable_all_cookies_btn_description' => 'При нажатии на эту кнопку все (необязательные) файлы cookie будут автоматически отключены, а панель исчезнет.',
+																														  
+            'import' => 'Импортировать настройки из файла',
             'import_confirm' => 'Вы уверены, что хотите импортировать настройки? Старые настройки будут потеряны!',
             'import_default' => 'Импортировать настройки по умолчанию',
             'import_default_confirm' => 'Вы уверены, что хотите импортировать настройки по умолчанию из шаблона:',
             'import_path_description' => 'Выберите файл настроек или оставьте поле пустым для стандартного файла с предустановками:',
-            'import_path_media' => 'Импортировать файл из области мультимедиа',
+            'import_path_media' => 'Импортировать файл из Media',
             'import_path_media_description' => 'Этот файл имеет приоритет над путем, указанным ниже.',
-            'export' => 'Настройки экспорта',
+            'export' => 'Экспортировать настройки',
             'cookies_lifetime_days' => 'Срок действия cookie (в днях)',
             'cookies_lifetime_days_comment' => 'Срок действия cookie в браузере',
             'save_settings' => 'Сохранить настройки',
@@ -73,7 +80,7 @@ return [
             'scripts_code_description' => 'Этот код вставляется, когда пользователь требует или разрешает группу. Пожалуйста, используйте теги «<script> </ script>» для JS кода.',
             'scripts_file' => 'Запустите JS файл',
             'scripts_file_description' => "Запустите этот файл.",
-            'scripts_run_production' => 'Только в производстве',
+            'scripts_run_production' => 'Только на хостинге',
             'scripts_run_production_description' => "Запускайте только JS-код и файлы в продакшене.",
             'scripts_disable' => 'Деактивировать',
             'scripts_disable_description' => 'Этот код не запускать.',
@@ -132,7 +139,7 @@ return [
             'file_name_default' => '/storage/app/media/small-gdpr-export.yaml',
 
             'flash' => [
-                'export_successfull' => 'Данные были успешно импортированы',
+                'export_successfull' => 'Данные были успешно экспортированы',
                 'export_error' => 'Произошла ошибка при экспорте. Дополнительная информация в системном журнале.',
                 'parse_error' => 'Данные настроек не могут быть обработаны. Дополнительная информация в системном журнале.',
                 'file_error' => 'Не удалось записать в файл! Проверьте имя и путь.',
@@ -140,3 +147,4 @@ return [
         ],
     ],
 ];
+															   
